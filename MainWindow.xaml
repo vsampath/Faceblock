@@ -1,0 +1,18 @@
+﻿<!--  FaceBlock - A Facebook Blocker for your PC
+      Copyright (C) 2010  Varun Sampath<vsampath@seas.upenn.edu>
+      Licensing information at the top of MainWindow.xaml.cs
+ -->
+    <Window x:Class="FaceBlock.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="FaceBlock" Height="280" Width="270" Background="LightGray" Name="window" ResizeMode="CanMinimize" Icon="/FaceBlock;component/Images/FaceBlock-2.png">
+    <!-- Icons provided by the Open Icon Library: http://openiconlibrary.sourceforge.net/-->
+    <Grid>
+        <Button Height="150" HorizontalAlignment="Center" Margin="0,0,0,60" 
+                Name="button" FontSize="108" VerticalAlignment="Center" Width="150" Click="button_Click" />
+        <TextBlock Height="30" HorizontalAlignment="Center" Margin="0,0,0,40" TextAlignment="Center"
+               Name="statusTB" VerticalAlignment="Bottom" Width="40" FontWeight="Heavy" FontSize="18" />
+        <TextBlock Height="45" HorizontalAlignment="Center" Margin="0,0,0,0" TextAlignment="Center"
+               Name="instTB" VerticalAlignment="Bottom" FontSize="12"/>
+    </Grid>
+</Window>

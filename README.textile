@@ -1,0 +1,35 @@
+h1. Faceblock
+
+FaceBlock is an app for your PC that can block Facebook for you, in the hopes that you can actually get work done in the site's absence ;)  Any attempt to access "facebook.com":http://facebook.com will redirect you to Penn's "Blackboard":http://165.123.34.40.
+
+It's my first app working with C# and WPF, and a weekend project at that, so don't be too harsh on any code critiques :)
+
+h2. Dependencies
+
+For Windows XP, Vista, and 7. Requires .NET Framework 3.0. Developed in Visual C# Express Edition 2010.
+
+h2. Licensing
+
+Use of this program is covered under the terms of the GNU General Public License.
+
+h2. FAQ (Oddly Written before Software Release)
+
+h3. Q: How do I use this thing?
+
+Simply download and double-click to run.  If you are running Vista or 7, accept the prompt for granting adminstrator privileges, as this program needs them to work.  The big button in the center of the app is the only control.
+
+h3. Q: So, this program lets me unblock Facebook as easily as I can block it.  What's the point?
+
+I'm afraid psychology is not my forte.  Here are some suggestions to improve your Facebook-less experience.  You could...
+
+* make it a game, and see how long you can go without pushing the button.
+* delete the app as soon as you block it, and convince yourself you are too lazy to redownload it and unblock.
+* create a separate limited user account, and give the admin account password to someone else (this is a tad risky).  Without admin, you can't unblock, so you have no choice but to live a Facebook-less dreary life, one filled with perhaps studying or interacting with physically-present people.
+
+h3. Q: Here now is an app that asks for Administrator privileges from a guy I may not know or trust.  Fishy?
+
+Check out the source and recompile it in Visual Studio if you don't trust the binary I provide.  Don't ya love open source?
+
+h3. Q: How does it work?
+
+All servers on the web have IP addresses, which are phone numbers in a sense for them.  Whenever you try to access a web resource via a URL (e.g. "facebook.com"), a service called Domain Name Resolution (DNS) looks up the associated IP address for that URL and you end up contacting the server via that address.  Before using DNS servers, though, many operating systems look up the address using a text file on the user's machine.  This text file is called the "HOSTS File":http://en.wikipedia.org/wiki/Hosts_(file)  This program simply edits the HOSTS File on your machine to change the IP address mapped to facebook.com.  The listing instead maps that URL to 165.123.34.40, aka Penn Blackboard.
